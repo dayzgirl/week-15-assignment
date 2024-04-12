@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import CreateTraining from '../src/components/CreateTraining';
+import ReadTraining from '../src/components/ReadTraining';
+import UpdateTraining from '../src/components/UpdateTraining';
+import DeleteTraining from '../src/components/DeleteTraining';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Training Management</h1>
+      <CreateTraining />
+      <ReadTraining />
+      <UpdateTraining />
+      <DeleteTraining />
     </div>
   );
 }

@@ -36,3 +36,83 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --primary-color: #8B4513; /* SaddleBrown */
+  --secondary-color: #CD853F; /* Peru */
+  --accent-color: #FFA500; /* Orange */
+  --background-color: #F5DEB3; /* Wheat */
+  --text-color: #333; /* Dark grey */
+}
+
+/* Apply background color to the whole page */
+body {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+}
+
+/* Main heading styles */
+h1 {
+  color: var(--primary-color);
+}
+
+/* Heading for each CRUD operation section */
+h2 {
+  color: var(--secondary-color);
+}
+
+/* Form input styles */
+input[type="text"],
+input[type="date"] {
+  width: 50%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+/* Button styles */
+button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: darken(var(--accent-color), 10%);
+}
+
+/* Table container */
+.table-container {
+  margin: 20px auto; /* Center the table horizontally */
+}
+
+/* Table styles */
+table {
+  background-color: #F5DEB3;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+/* Table header styles */
+th {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+}
+
+/* Table cell styles */
+td {
+  border: 1px solid var(--accent-color);
+  padding: 10px;
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
